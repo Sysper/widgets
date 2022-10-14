@@ -11,7 +11,7 @@
         /*CSS RESETS*/
 
 body{
-    background-color: #fff;
+    background-color: #191919;
     line-height: 1.6;
 
 }
@@ -38,10 +38,10 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #009688;
-    color: #fff;
+    background: #bbbfbe;
+    color: rgb(97, 81, 81);
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #295C7B;
+    box-shadow: 2px 2px 1px 0px #808c93;
 }
 
 .card:hover {
@@ -59,7 +59,7 @@ h1 {
 
 .time {
     display: inline-block;
-    min-width: 37px;
+    min-width: 20px;
 }
 
 .colon {
@@ -69,7 +69,7 @@ h1 {
 
 .date {
     display: block;
-    min-width: 162px;
+    min-width: 200px;
     /* padding-right: 30px; */
     /* border-right: 2px solid #295C7B; */
     font-family: 'Roboto', sans-serif;
@@ -126,11 +126,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = 'Good Morning - Bom dia - Buenos días ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = 'Good Afternoon - Boa tarde -Buenas tardes ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = 'Good Evening - Boa noite - Buenas noches ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
